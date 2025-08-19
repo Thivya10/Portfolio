@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyber">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thivya Padmini S — Cybersecurity Portfolio</title>
+  <meta name="description" content="THIVYA PADMINI S — VAPT, InfoSec Auditing, AI + Cybersecurity. Projects, experience, certifications, and profiles." />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Matrix Rain Canvas (Hacker Mode) -->
+  <canvas id="matrix" class="matrix"></canvas>
+
+  <!-- Header -->
+  <header class="header blur">
+    <div class="container nav">
+      <a class="brand" href="#top"><span class="muted">&lt;</span>Thivya<span class="accent">.sec</span><span class="muted">/&gt;</span></a>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="hackerToggle" class="icon-btn" title="Toggle Hacker Mode"><i class="fa-solid fa-terminal"></i></button>
+        <a class="btn solid" href="assets/Thivya_Padmini_Resume.pdf" download>
+          <i class="fa-solid fa-download"></i><span>Resume</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="bg-grid">
+    <!-- HERO -->
+    <section class="hero section" data-animate>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="display neon">
+            <span class="code-tag">&lt;VAPT • Auditing • AI&gt;</span><br />
+            <span class="grad">THIVYA PADMINI S</span>
+          </h1>
+          <p class="subtitle">Cybersecurity & AI Security — Web App VAPT • InfoSec Auditing • GRC-aware</p>
+          <p class="lead">
+            I break, test, and harden systems. I use <strong>AI-assisted analysis</strong> to explain the
+            <em>why</em> behind every finding and deliver remediation developers actually implement.
+          </p>
+
+          <div class="terminal panel" aria-hidden="true">
+            <div class="prompt">
+              <span class="caret">$</span>
+              <span id="type-line" class="type-line"></span>
+            </div>
+          </div>
+
+          <div class="cta">
+            <a class="btn cyan" href="#contact"><i class="fa-regular fa-paper-plane"></i><span>Get In Touch</span></a>
+            <a class="btn outline" href="assets/Thivya_Padmini_Resume.pdf" target="_blank">
+              <i class="fa-regular fa-file-lines"></i><span>View Resume</span>
+            </a>
+          </div>
+
+          <div class="socials">
+            <a href="mailto:thivyasusee10@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/thivya-padmini-s-8b1030358" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Thivya10" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://tryhackme.com/p/thivyapadminiS" target="_blank" aria-label="TryHackMe"><i class="fa-solid fa-user-ninja"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrap">
+            <img src="assets/profile.jpg" alt="Thivya Padmini portrait" onerror="this.style.display='none'">
+            <div class="ring"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-animate>
+      <div class="container cols">
+        <article class="panel">
+          <h2>About</h2>
+          <p>
+            I’m a <strong>Cybersecurity & AI security</strong> enthusiast with hands-on exposure to
+            <strong>Web App VAPT</strong>, <strong>Information Security Auditing</strong>, and
+            <strong>AI-assisted tooling</strong> for triage and reporting. Strong at clear documentation, reproducible
+            PoCs, and mapping to OWASP.
+          </p>
+          <ul class="list-brief">
+            <li><i class="fa-solid fa-location-dot"></i> Dindigul, India</li>
+            <li><i class="fa-solid fa-graduation-cap"></i> B.E. CSE (Cybersecurity), PSNA College (2023–Present)</li>
+            <li><i class="fa-solid fa-building"></i> Cybersecurity Intern @ Cypherdote (Jul 2025–Present)</li>
+          </ul>
+          <div class="badges">
+            <span>OWASP Top 10</span><span>VAPT</span><span>InfoSec Auditing</span><span>AI in Security</span>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <h3>Tooling</h3>
+          <div class="tags">
+            <span>Burp Suite</span><span>Nmap</span><span>Nessus</span><span>Wireshark</span>
+            <span>Kali</span><span>Windows</span><span>Python</span>
+          </div>
+          <h3 class="mt-20">Focus</h3>
+          <div class="tags">
+            <span>Web App VAPT</span><span>Infra Scans</span><span>Reporting</span><span>OWASP</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-animate>
+      <div class="container">
+        <h2 class="center">Technical Expertise</h2>
+        <div class="cards three">
+          <article class="panel card-hover">
+            <div class="panel-title"><i class="fa-solid fa-code"></i> Programming / Scripting</div>
+            <ul class="pill-list">
+              <li>Python <span class="pill">Intermediate</span></li>
+              <li>Bash <span class="pill">Basic</span></li>
+              <li>Automation Scripts <span class="pill">Project-based</span></li>
+            </ul>
+          </article>
+
+          <article class="panel card-hover">
+            <div class="panel-title"><i class="fa-solid fa-shield-halved"></i> VAPT & Auditing</div>
+            <ul class="pill-list">
+              <li>Web App VAPT <span class="pill">Strong</span></li>
+              <li>Infra Scanning (Nmap/Nessus) <span class="pill">Good</span></li>
+              <li>OWASP Top 10 <span class="pill">Strong</span></li>
+              <li>Reporting & Remediation <span class="pill">Strong</span></li>
+            </ul>
+          </article>
+
+          <article class="panel card-hover">
+            <div class="panel-title"><i class="fa-solid fa-robot"></i> AI + Security</div>
+            <ul class="pill-list">
+              <li>LLM-assisted vuln analysis <span class="pill">Good</span></li>
+              <li>AST/Rule Hybrid Checks <span class="pill">Project</span></li>
+              <li>Prompt Security Basics <span class="pill">Good</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" data-animate>
+      <div class="container">
+        <h2 class="center">Experience</h2>
+        <div class="timeline">
+          <div class="tli">
+            <div class="dot"></div>
+            <div class="content panel">
+              <h3>Cybersecurity Intern — Cypherdote</h3>
+              <div class="when">Jul 2025 – Present • Dindigul</div>
+              <ul class="checklist">
+                <li>Performed web app VAPT (XSS, CSRF, IDOR) using Burp Suite.</li>
+                <li>Assisted Infra VAPT: open ports & misconfigurations (Nmap, Nessus).</li>
+                <li>Worked on <strong>CAPS</strong> phishing simulation platform (testing & QA).</li>
+                <li>Delivered developer-ready remediation with severity & impact.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Short-term internship -->
+          <div class="tli">
+            <div class="dot"></div>
+            <div class="content panel">
+              <h3>Cybersecurity Internship — Prompt Infotech</h3>
+              <div class="when">5 Days • 2025</div>
+              <ul class="checklist">
+                <li>Exposure to practical cybersecurity workflows and case studies.</li>
+                <li>Hands-on with basic reconnaissance, analysis, and reporting.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-animate>
+      <div class="container">
+        <h2 class="center">Projects</h2>
+        <div class="cards three">
+          <!-- CAPS -->
+          <article class="panel card-hover">
+            <div class="panel-header">
+              <h3>CAPS — Phishing Simulation Platform (Cypherdote)</h3>
+              <span class="status">Internship</span>
+            </div>
+            <p>
+              Simulated phishing and ran awareness campaigns; tested platform functionality end-to-end: campaign creation,
+              templates, landing pages, user groups, scheduling, and safe payload behavior. Validated metrics (opens,
+              clicks, submissions) and verified dashboard reporting accuracy.
+            </p>
+            <ul class="mini">
+              <li><i class="fa-solid fa-envelope-circle-check"></i> Campaign design & execution for awareness</li>
+              <li><i class="fa-solid fa-gears"></i> Functional testing of templates, redirects & landing pages</li>
+              <li><i class="fa-solid fa-chart-line"></i> QA of reports: delivery, opens, clicks, completion</li>
+              <li><i class="fa-solid fa-shield"></i> Ensured realistic-but-safe payload testing</li>
+            </ul>
+          </article>
+
+          <!-- AI + Security Project -->
+          <article class="panel card-hover">
+            <div class="panel-header">
+              <h3>Hexora.ai — AI-Powered Source Code Vulnerability Finder</h3>
+              <span class="status">Ongoing</span>
+            </div>
+            <p>Hybrid engine using <strong>AST parsing</strong>, <strong>rule-based matching</strong>, and
+              <strong>LLM reasoning</strong> to detect & explain vulnerabilities; outputs OWASP-mapped reports.</p>
+            <ul class="mini">
+              <li><i class="fa-solid fa-sitemap"></i> Multi-language code analysis pipeline</li>
+              <li><i class="fa-solid fa-file-shield"></i> OWASP-aligned report generation</li>
+              <li><i class="fa-solid fa-clock-rotate-left"></i> Change tracking across commits</li>
+            </ul>
+          </article>
+
+          <!-- Patent -->
+          <article class="panel card-hover">
+            <div class="panel-header">
+              <h3>AI-Based Rapid Milk Testing Model</h3>
+              <span class="status">Patent Filed</span>
+            </div>
+            <p>Patent No. <strong>202541066350</strong>. Built an AI model for rapid quality testing.
+              Recognized in SIH and MSME hackathon (intra-college selections).</p>
+            <ul class="mini">
+              <li><i class="fa-solid fa-certificate"></i> Patent filed</li>
+              <li><i class="fa-solid fa-flask"></i> Applied ML</li>
+              <li><i class="fa-solid fa-trophy"></i> Hackathon selections</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILES -->
+    <section id="profiles" class="section" data-animate>
+      <div class="container">
+        <h2 class="center">Profiles & Links</h2>
+        <div class="cards three">
+          <a class="panel link-card" target="_blank" href="https://github.com/Thivya10">
+            <i class="fa-brands fa-github"></i>
+            <div class="link-meta">
+              <h3>GitHub</h3>
+              <p>Code, scripts, and security tooling experiments.</p>
+            </div>
+          </a>
+
+          <a class="panel link-card" target="_blank" href="https://tryhackme.com/p/thivyapadminiS">
+            <i class="fa-solid fa-user-ninja"></i>
+            <div class="link-meta">
+              <h3>TryHackMe</h3>
+              <p>Hands-on labs: recon, web vulns, privilege escalation.</p>
+            </div>
+          </a>
+
+          <a class="panel link-card" target="_blank" href="https://www.linkedin.com/in/thivya-padmini-s-8b1030358">
+            <i class="fa-brands fa-linkedin"></i>
+            <div class="link-meta">
+              <h3>LinkedIn</h3>
+              <p>Experience, achievements, and professional updates.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section" data-animate>
+      <div class="container">
+        <h2 class="center">Certifications, Bootcamps & Virtual Experience</h2>
+        <div class="cards three">
+          <article class="panel">
+            <h3>Certifications</h3>
+            <ul class="mini">
+              <li>CEH — EC-Council</li>
+              <li>ISO/IEC 27001: Information Security Associate — SkillFront</li>
+              <li>Cybersecurity & Ethical Hacking for Beginners — Guvi, IITM Research Park</li>
+              <li>Network Security Fundamentals — Guvi</li>
+              <li>Generative AI — Guvi (In Progress)</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3>Workshops & Bootcamps</h3>
+            <ul class="mini">
+              <li>Advanced Cybersecurity & Ethical Hacking — Ozone Cyber Security (3 days)</li>
+              <li><strong>Cybercrime Investigations Bootcamp — Prompt Infotech (5 days)</strong></li>
+              <li>PenTest Pro — Offensive Security (3 days)</li>
+              <li>Digital Defense — Modern Cyber Defense Techniques (2 days)</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3>Virtual Experience</h3>
+            <ul class="mini">
+              <li><strong>Deloitte — Job Simulation</strong></li>
+              <li><strong>TCS — Job Simulation</strong></li>
+              <li><strong>Cybersecurity Internship — Prompt Infotech (5 days)</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-animate>
+      <div class="container cols">
+        <article class="panel">
+          <h2>Contact</h2>
+          <p>If you’re hiring for VAPT, InfoSec Auditing, or AI-assisted security roles, I’d love to talk.</p>
+          <ul class="contact">
+            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:thivyasusee10@gmail.com">thivyasusee10@gmail.com</a></li>
+            <li><i class="fa-brands fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/thivya-padmini-s-8b1030358">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/Thivya10">GitHub</a></li>
+          </ul>
+          <div class="cta">
+            <a class="btn solid" href="assets/Thivya_Padmini_Resume.pdf" download><i class="fa-solid fa-download"></i><span>Download Resume</span></a>
+            <a class="btn outline" href="#top"><i class="fa-solid fa-arrow-up"></i><span>Back to top</span></a>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <h3>Resume Preview</h3>
+          <iframe title="Resume" src="assets/Thivya_Padmini_Resume.pdf#view=FitH" loading="lazy"></iframe>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Thivya Padmini S — Security-first, clean UX.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
